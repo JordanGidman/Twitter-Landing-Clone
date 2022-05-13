@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0 auto;
+}
+
+.secondary-text {
+}
