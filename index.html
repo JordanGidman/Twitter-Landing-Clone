@@ -16,9 +16,24 @@
   </head>
   <body>
     <div class="container">
-      <div class="nav-div">
+      <header class="nav-header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo"
+          viewBox="0 0 512 512"
+        >
+          <title>Logo Twitter</title>
+          <path
+            d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+          />
+        </svg>
         <nav class="nav">
           <ul class="main-nav-list">
+            <li>
+              <a href="#"
+                ><ion-icon class="logo" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
             <li>
               <a href="#" class="main-nav-links"
                 ><svg
@@ -163,26 +178,85 @@
                 >More</a
               >
             </li>
-            <li><a href="#" class="main-nav-links nav-btn">Tweet</a></li>
+            <li><a href="#" class="main-nav-links btn nav-btn">Tweet</a></li>
           </ul>
         </nav>
-      </div>
+      </header>
       <main>
         <section class="section-hero">
-          <div class="banner"></div>
-          <div class="hero-img-box"></div>
+          <div class="banner">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            <div class="banner-text-box">
+              <p class="primary-text">MichaelScofield</p>
+              <p class="secondary-text">124 Tweets</p>
+            </div>
+          </div>
+          <div class="banner-container">
+            <div class="hero-img-box"></div>
+            <div class="hero-user-img-box"></div>
+          </div>
+          <div class="edit-btn-div">
+            <a href="#" class="btn edit-btn">Edit Profile</a>
+          </div>
           <div class="hero-text-box">
-            <h1 class="hero-name"></h1>
-            <p class="hero-text"></p>
-            <p class="hero-joined"></p>
-            <div class="hero-tabs"></div>
+            <h1 class="hero-name primary-text">MichaelScofield</h1>
+            <p class="user-id-text secondary-text">@MichaelSco</p>
+            <p class="hero-text tertiary-text">
+              Hi, im michael. im a web developer and former prison Escapee.
+              Current Structural Engineer, Husband, and Father. Im just here for
+              the prison break memes.
+            </p>
+            <p class="hero-joined secondary-text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="hero-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                /></svg
+              >Joined October 2005
+            </p>
+            <div class="hero-followers">
+              <p class="secondary-text followers">
+                <span>2356</span> Followers
+              </p>
+              <p class="secondary-text followers"><span>314</span> Following</p>
+            </div>
           </div>
         </section>
 
+        <nav class="hero-nav">
+          <ul class="hero-nav-list">
+            <li><a href="#" class="hero-nav-links">Tweets</a></li>
+            <li><a href="#" class="hero-nav-links">Tweets & Replies</a></li>
+            <li><a href="#" class="hero-nav-links">Media</a></li>
+            <li><a href="#" class="hero-nav-links">Likes</a></li>
+          </ul>
+        </nav>
+
         <section class="section-tweet"></section>
       </main>
-      <aside>
-        <input class="search-bar" />
+      <aside class="aside">
+        <input type="text" class="search-bar" />
         <section class="section-you might-like">
           <h2 class="aside-heading">You Might Like</h2>
           <div class="suggestions"></div>

@@ -14,12 +14,44 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+main {
+  border-left: 0.5px solid rgba(139, 142, 146, 0.4);
+  border-right: 0.5px solid rgba(139, 142, 146, 0.4);
+}
+
 .container {
-  width: 120rem;
+  width: 130rem;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1.25fr;
   margin: 0 auto;
 }
 
+.primary-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
 .secondary-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #8b8e92;
+}
+
+.tertiary-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #eee;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  padding: 1.2rem 2.4rem;
+  border-radius: 32px;
+  border: 1px solid #8b8e92;
+}
+
+.followers span {
+  color: #fff;
 }

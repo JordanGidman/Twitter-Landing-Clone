@@ -1,12 +1,23 @@
+/* //////////////////////////// */
 /* NAVIGATION */
+/* //////////////////////////// */
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+}
+
+.nav-header {
+  padding: 3.2rem 2.4rem;
+}
+
 .main-nav-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.main-nav-list li {
+  gap: 3rem;
+  font-weight: 400;
 }
 
 .main-nav-links:link,
@@ -23,4 +34,124 @@
   width: 3rem;
   height: 3rem;
   stroke: #fff;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d9bf0;
+}
+/* //////////////////////////// */
+/* MAIN CONTENT/ HERO  */
+/* //////////////////////////// */
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+
+.banner {
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.2rem;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.hero-img-box {
+  background-image: url(img/banner-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 22rem;
+  /* position: relative; */
+}
+
+.hero-user-img-box {
+  height: 12.8rem;
+  width: 12.8rem;
+  border-radius: 50%;
+  background-image: url(img/profile-photo.jpg);
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 2.4rem;
+  transform: translateY(50%);
+  border: 4px solid #000;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.edit-btn-div {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.edit-btn:link,
+.edit-btn:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.8rem 2.4rem;
+}
+.hero-text-box {
+  padding: 0 1.5rem;
+}
+
+.hero-text {
+  margin-bottom: 1rem;
+}
+
+.hero-joined {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #8b8e92;
+}
+
+.user-id-text {
+  margin-bottom: 2.4rem;
+}
+
+.hero-followers {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.hero-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 0.5px solid rgba(139, 142, 146, 0.4);
+}
+
+.hero-nav-links:link,
+.hero-nav-links:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #8b8e92;
 }
