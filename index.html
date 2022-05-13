@@ -253,22 +253,120 @@
           </ul>
         </nav>
 
-        <section class="section-tweet"></section>
-      </main>
-      <aside class="aside">
-        <input type="text" class="search-bar" />
-        <section class="section-you might-like">
-          <h2 class="aside-heading">You Might Like</h2>
-          <div class="suggestions"></div>
-        </section>
-        <section class="section-whats-happening">
-          <div class="aside-content">
-            <div class="aside-content-text">
-              <p class="aside-content-date"></p>
+        <div class="tweet-div">
+          <p class="secondary-text tweet-secondary">You Retweeted</p>
+          <div class="tweet-owner-info">
+            <div class="tweet-user-img"></div>
+            <div class="tweet-owner-text">
+              <p class="primary-text">John Abruzzi</p>
+              <p class="secondary-text">@mobjohn - Apr 26, 2021</p>
             </div>
           </div>
-          <div class="aside-content"></div>
-          <div class="aside-content"></div>
+        </div>
+      </main>
+      <aside class="aside">
+        <div class="search-bar-div">
+          <input type="text" class="search-bar" placeholder="Search Twitter" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+        <div class="you-might-like">
+          <h2 class="aside-heading">You Might Like</h2>
+          <div class="suggestions">
+            <div class="suggestions-container">
+              <div class="like-img-box like--1"></div>
+              <div class="aside-like-text">
+                <p class="secondary-heading">Lincoln Burrows</p>
+                <p class="secondary-text">@linkthesink</p>
+              </div>
+            </div>
+            <a href="#" class="aside-follow-btn">Follow</a>
+          </div>
+          <div class="suggestions">
+            <div class="suggestions-container">
+              <div class="like-img-box like--2"></div>
+              <div class="aside-like-text">
+                <p class="secondary-heading">Sara Tancredi</p>
+                <p class="secondary-text">@doctorsara</p>
+              </div>
+            </div>
+            <a href="#" class="aside-follow-btn">Follow</a>
+          </div>
+          <a href="#" class="aside-show-more secondary-text">Show More</a>
+        </div>
+        <section class="section-whats-happening">
+          <h2 class="aside-heading">Whats Happening?</h2>
+          <div class="aside-happening-box">
+            <div class="aside-happening-text">
+              <p class="happening-who secondary-text margin-bottom-xsm">
+                Sky News LIVE
+              </p>
+              <p class="happening-text tertiary-text margin-bottom-xsm">
+                Astronomers capture first image of the Milky Way's black hole.
+              </p>
+              <p class="secondary-text">6400 Tweets</p>
+            </div>
+            <div class="aside-happening-img">
+              <img
+                src="img/happening-img-1.jpg"
+                class="happening-img"
+                alt="image of a black hole event horizon"
+              />
+            </div>
+          </div>
+          <div class="aside-happening-box">
+            <div class="aside-happening-text">
+              <p class="happening-who secondary-text margin-bottom-xsm">BBC</p>
+              <p class="happening-text tertiary-text margin-bottom-xsm">
+                New Doctor Who actor finally confirmed to replace jodie
+                whitaker.
+              </p>
+              <p class="secondary-text trending-text">
+                Trending with <span>@jodiewhitacker</span>
+              </p>
+            </div>
+            <div class="aside-happening-img">
+              <img
+                src="img/happening-img-2.jpg"
+                class="happening-img"
+                alt="image of a black hole event horizon"
+              />
+            </div>
+          </div>
+          <div class="aside-happening-box">
+            <div class="aside-happening-text">
+              <p class="happening-who secondary-text margin-bottom-xsm">
+                World News
+              </p>
+              <p class="happening-text tertiary-text margin-bottom-xsm">
+                UN council to investigate alleged human rights abuse by Russian
+                troops
+              </p>
+              <p class="secondary-text trending-text">
+                13,000 Tweets Today with <span>#Ukrainewar</span>
+              </p>
+            </div>
+            <div class="aside-happening-img">
+              <img
+                src="img/happening-img-3.jpg"
+                class="happening-img"
+                alt="image of a black hole event horizon"
+              />
+            </div>
+          </div>
+          <a href="#" class="aside-show-more secondary-text">Show More</a>
         </section>
       </aside>
     </div>

@@ -19,10 +19,14 @@ main {
   border-right: 0.5px solid rgba(139, 142, 146, 0.4);
 }
 
+aside {
+  margin: 1rem 2.4rem;
+}
+
 .container {
   width: 130rem;
   display: grid;
-  grid-template-columns: 1fr 2fr 1.25fr;
+  grid-template-columns: 1fr 2fr 1.5fr;
   margin: 0 auto;
 }
 
@@ -34,7 +38,7 @@ main {
 
 .secondary-text {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #8b8e92;
 }
 
@@ -42,6 +46,10 @@ main {
   font-size: 1.6rem;
   font-weight: 400;
   color: #eee;
+}
+
+.secondary-heading {
+  font-size: 1.8rem;
 }
 
 .btn {
@@ -54,4 +62,21 @@ main {
 
 .followers span {
   color: #fff;
+}
+
+.aside-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.like-img-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  height: 5.4rem;
+  width: 5.4rem;
+}
+/* REUSABLE */
+.margin-bottom-xsm {
+  margin-bottom: 0.8rem;
 }

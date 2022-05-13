@@ -155,3 +155,164 @@
   text-decoration: none;
   color: #8b8e92;
 }
+
+/* ASIDE */
+
+.search-bar-div {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.search-bar {
+  background-color: #202327;
+  width: 100%;
+  align-self: center;
+  padding: 1.4rem 2.4rem;
+  border-radius: 32px;
+  border: none;
+
+  /* position: relative; */
+}
+
+.search-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #8b8e92;
+
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+}
+
+.search-bar::placeholder {
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.you-might-like {
+  background-color: #202327;
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.aside-heading {
+  padding-bottom: 3.2rem;
+}
+
+.like--1 {
+  background-image: url(img/suggestion-photo-1.jpg);
+}
+.like--2 {
+  background-image: url(img/suggestion-photo-2.jpg);
+}
+
+.suggestions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.suggestions-container {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.aside-follow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 32px;
+  text-decoration: none;
+}
+.aside-follow-btn:link,
+.aside-follow-btn:visited {
+  color: #202327;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.aside-show-more {
+  text-decoration: none;
+}
+
+.aside-show-more:link,
+.aside-show-more:visited {
+  color: #1d9bf0;
+}
+
+/* WHATS HAPPENING SECTION */
+.section-whats-happening {
+  background-color: #202327;
+  border-radius: 16px;
+  padding: 1.8rem;
+}
+
+.aside-happening-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+/* 
+.aside-happening-img {
+  border-radius: 1.6rem;
+  background-image: url(img/happening-img-1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+} */
+
+.happening-img {
+  width: 7.4rem;
+  height: 7.4rem;
+  border-radius: 1.6rem;
+}
+
+.aside-happening-text {
+  margin-bottom: 2.4rem;
+}
+
+.happening-text {
+  font-weight: 600;
+}
+
+.trending-text span {
+  color: #1d9bf0;
+}
+
+/* TWEET */
+.tweet-div {
+  padding: 1rem;
+}
+
+.tweet-secondary {
+  margin-bottom: 2rem;
+}
+
+.tweet-owner-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tweet-user-img {
+  border-radius: 50%;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-image: url(img/tweet-user-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tweet-owner-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
