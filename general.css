@@ -6,6 +6,8 @@
 
 html {
   font-size: 62.5%;
+  /* for responsive */
+  transition: all 0.3s ease;
 }
 
 body {
@@ -17,10 +19,18 @@ body {
 main {
   border-left: 0.5px solid rgba(139, 142, 146, 0.4);
   border-right: 0.5px solid rgba(139, 142, 146, 0.4);
+  grid-column: 2/3;
 }
 
 aside {
   margin: 1rem 2.4rem;
+}
+
+aside,
+header {
+  position: sticky;
+  top: 0;
+  align-self: start;
 }
 
 .container {
@@ -28,6 +38,8 @@ aside {
   display: grid;
   grid-template-columns: 1fr 2fr 1.5fr;
   margin: 0 auto;
+
+  transition: all 0.3s ease;
 }
 
 .primary-text {
@@ -79,4 +91,20 @@ aside {
 /* REUSABLE */
 .margin-bottom-xsm {
   margin-bottom: 0.8rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.highlight {
+  color: #1d9bf0;
 }

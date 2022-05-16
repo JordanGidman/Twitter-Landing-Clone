@@ -16,7 +16,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   font-weight: 400;
 }
 
@@ -28,6 +28,14 @@
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
+
+  padding: 1rem;
+  border-radius: 32px;
+}
+
+.main-nav-links:hover,
+.main-nav-links:active {
+  background-color: rgba(139, 142, 146, 0.2);
 }
 
 .nav-icon {
@@ -42,7 +50,35 @@
   justify-content: center;
   align-items: center;
   background-color: #1d9bf0;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
+
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: #1a8cd8;
+}
+
+/* mobile navigation */
+.main-mobile-nav {
+  opacity: 0;
+  padding: 2rem;
+  background-color: #000;
+  border-top: 0.5px solid rgba(139, 142, 146, 0.4);
+}
+
+.mobile-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.mobile-nav-links:link,
+.mobile-nav-links:visited {
+  color: #fff;
+}
+
 /* //////////////////////////// */
 /* MAIN CONTENT/ HERO  */
 /* //////////////////////////// */
@@ -236,6 +272,13 @@
   color: #202327;
   font-size: 1.4rem;
   font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.aside-follow-btn:hover,
+.aside-follow-btn:active {
+  background-color: #e6e6e6;
 }
 
 .aside-show-more {
@@ -283,23 +326,30 @@
   font-weight: 600;
 }
 
-.trending-text span {
-  color: #1d9bf0;
-}
-
 /* TWEET */
 .tweet-div {
   padding: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 8fr 92fr;
+  column-gap: 1rem;
+  border-bottom: 0.5px solid rgba(139, 142, 146, 0.4);
 }
 
 .tweet-secondary {
-  margin-bottom: 2rem;
+  grid-column: 2/3;
 }
 
 .tweet-owner-info {
+  align-self: center;
   display: flex;
   align-items: center;
   gap: 1rem;
+  grid-column: 2/3;
+}
+
+.tweet-owner-text {
+  align-self: center;
 }
 
 .tweet-user-img {
@@ -309,10 +359,62 @@
   background-image: url(img/tweet-user-img.jpg);
   background-size: cover;
   background-position: center;
+  grid-column: 1/2;
+}
+
+/* This is a mistake that needs to be refactored *temporary* */
+.tweet-user-img-2 {
+  border-radius: 50%;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-image: url(img/tweet-user-img-2.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/2;
 }
 
 .tweet-owner-text {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.tweet-content-box {
+  grid-column: 2/3;
+}
+
+.tweet-img {
+  width: 100%;
+  border-radius: 1.6rem;
+}
+
+.tweet-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2/3;
+}
+
+.tweet-btn {
+  height: 3.6rem;
+  width: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  background-color: #000;
+  border-radius: 50%;
+  border: none;
+}
+
+.tweet-btn:hover,
+.tweet-btn:active {
+  background-color: rgba(139, 142, 146, 0.2);
+  cursor: pointer;
+}
+
+.tweet-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #8b8e92;
 }
